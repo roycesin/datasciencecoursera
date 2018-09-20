@@ -1,5 +1,5 @@
 # test-repo
-##secondary header
-*bulle
-*bullet2
-*bullet3
+## secondary header
+* bullet
+* bullet2
+* bullet3

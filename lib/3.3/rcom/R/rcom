@@ -1,0 +1,108 @@
+.packageName <- "rcom"
+# 
+#  RCOM : COM Client and Server for R
+#  Copyright (C) 2003-2005 Thomas Baier
+# 
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+# 
+#  $Id: create.R 1.2 2003/04/27 16:38:37 baier Exp baier $
+#
+comCreateObject<-function(progid)
+  .Call("com_create",as.character(progid),PACKAGE="rcom")
+comGetObject<-function(progid)
+  .Call("com_getobject",as.character(progid),PACKAGE="rcom")
+comInvoke<-function(handle,method,...)
+  .Call("com_invoke",handle,as.character(method),list(...),PACKAGE="rcom")
+comIsValidHandle<-function(handle)
+  .Call("com_isvalid",handle,PACKAGE="rcom")
+comSetProperty<-function(handle,property,value)
+  .Call("com_property_set",handle,as.character(property),value,PACKAGE="rcom")
+comGetProperty<-function(handle,property,...) {
+   .Call("com_property_get",handle,as.character(property),list(...),PACKAGE="rcom")
+}
+comTraceObject<-function(handle) {
+  .Call("com_object_trace",handle,PACKAGE="rcom");
+}
+comGetObjectInfo<-function(handle) {
+  .Call("com_object_getinfo",handle,PACKAGE="rcom");
+}
+comRegisterServer<-function() .Call("registerServer",PACKAGE="rcom")
+comUnregisterServer<-function() .Call("unregisterServer",PACKAGE="rcom")
+comRegisterRegistry<-function() .Call("registerServerInRegistry",PACKAGE="rcom")
+comUnregisterRegistry<-function() .Call("unregisterServerInRegistry",PACKAGE="rcom")
+comTrace<-function(x) .Call("com_trace",x,PACKAGE="rcom")
+comGetVersion<-function() .Call("com_version_get",PACKAGE="rcom")
+comThis<-function() .Call("com_this",PACKAGE="rcom")
+# 
+#  RCOM : COM Client and Server for R
+#  Copyright (C) 2003-2005 Thomas Baier
+# 
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+# 
+#  $Id: create.R 1.2 2003/04/27 16:38:37 baier Exp baier $
+#
+
+# The following code was contributed by Gabor Grothendieck
+# (mailto:ggrothendieck@myway.com). Many thanks!
+#
+# unfortunately the code doesn't work with R 2.2.0Devel
+"[[<-.COMObject" <- function(x, s, value) { comSetProperty(x, s, value); x }
+"[[.COMObject" <- comGetProperty
+"$.COMObject" <- function(x, f) {
+..FUN <- as.character(substitute(f))
+function(...) comInvoke(x, ..FUN, ...)
+}
+
+# 
+#  RCOM : COM Client and Server for R
+#  Copyright (C) 2003-2005 Thomas Baier
+# 
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+# 
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+# 
+#  $Id: create.R 1.2 2003/04/27 16:38:37 baier Exp baier $
+#
+.onLoad <- function(lib, pkg)
+{
+#    cat("loading library rcom...");
+#    library.dynam("rcom", pkg, lib);
+#    cat("done\n");
+#    cat("registering COM server...");
+    .Call("registerServer",PACKAGE="rcom");
+#    cat("done\n");
+}

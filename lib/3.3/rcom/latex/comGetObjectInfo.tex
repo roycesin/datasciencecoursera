@@ -1,0 +1,31 @@
+\HeaderA{comGetObjectInfo}{Get Information about a COM Objects}{comGetObjectInfo}
+\keyword{programming}{comGetObjectInfo}
+\keyword{interface}{comGetObjectInfo}
+\begin{Description}\relax
+This function will return information about the COM object passed as
+parameter.
+
+Use this function to find out what \code{rcom} thinks about the object.
+
+Use this function for debugging purposes to find out why \code{rcom} fails.
+
+Not yet implemented!
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+comGetObjectInfo(handle)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{handle}] COM object (class "COMObject") as returned by e.g.
+\code{comCreateObject}
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+\code{comGetObject} will return a list of all functions and their descriptions
+\end{Value}
+\begin{Author}\relax
+Thomas Baier
+\end{Author}
+

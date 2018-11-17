@@ -1,0 +1,31 @@
+comRegisterRegistry           package:rcom           R Documentation
+
+_R_e_g_i_s_t_e_r _t_h_e _C_O_M _s_e_r_v_e_r _i_n _t_h_e _r_e_g_i_s_t_r_y
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function will register the COM server and its associated type
+     library with the system (registry).
+
+     Technically, this will register the type library and add
+     local-server entries for the prog and class ids.
+
+     This function has to be called when installing the package.
+     Otherwise, neither the type library will be available (automation
+     clients cannot use the server) nor a mapping from version
+     independent and version-dependant prog-id will be available.
+
+_U_s_a_g_e:
+
+     comRegisterRegistry()
+
+_A_r_g_u_m_e_n_t_s:
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Baier
+
+_S_e_e _A_l_s_o:
+
+     'comUnregisterRegistry'
+

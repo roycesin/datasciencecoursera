@@ -1,0 +1,12 @@
+Package: rcom
+Version: 1.2.4
+Date: 2006-04-11
+Title: R COM Client Interface and internal COM Server
+Author: Thomas Baier
+Maintainer: Thomas Baier <Thomas.Baier@ci.tuwien.ac.at>
+Description: R functions to interface with COM objects, R exposed to
+        COM Clients
+License: GPL Version 2 or later.
+Depends: R (>= 2.2.0)
+Packaged: Tue Apr 11 08:25:29 2006; baier
+Built: R 2.3.0; i386-pc-mingw32; 2006-04-24 23:08:27; windows

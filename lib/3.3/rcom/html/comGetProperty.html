@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Read One of a COM Object's Properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for comGetProperty {rcom}"><tr><td>comGetProperty {rcom}</td><td align="right">R Documentation</td></tr></table>
+<h2>Read One of a COM Object's Properties</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Reads one of the COM object's properties.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+comGetProperty(handle,property,...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>handle</code></td>
+<td>
+COM object (class "COMObject") as returned by e.g.
+<code>comCreateObject</code></td></tr>
+<tr valign="top"><td><code>property</code></td>
+<td>
+name of property to get as a character string</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+optional additional arguements for property specification (e.g.
+index for an array)</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+The return value depends on the (data) type of the property to read.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Thomas Baier
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="comInvoke.html">comInvoke</a></code>, <code><a href="comSetProperty.html">comSetProperty</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# start up excel
+## Not run: x&lt;-comCreateObject("Excel.Application")
+
+# retrieve the "Visible" property
+## Not run: v &lt;- comGetProperty(x,"Visible")
+
+# add a new workbook to Excel and gain access to the first worksheet
+## Not run: newwb &lt;- comInvoke(comGetProperty(x,"Workbooks"),"Add")
+## Not run: ws &lt;- comGetProperty(newwb,"Worksheets",1)
+
+# get a specific range
+## Not run: r &lt;- comGetProperty(ws,"Range","A1","B4")
+
+# do something now...
+</pre>
+
+
+
+<hr><div align="center">[Package <em>rcom</em> version 1.2.4 <a href="00Index.html">Index]</a></div>
+
+</body></html>

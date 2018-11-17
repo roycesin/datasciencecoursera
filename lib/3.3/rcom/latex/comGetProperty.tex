@@ -1,0 +1,48 @@
+\HeaderA{comGetProperty}{Read One of a COM Object's Properties}{comGetProperty}
+\keyword{programming}{comGetProperty}
+\keyword{interface}{comGetProperty}
+\begin{Description}\relax
+Reads one of the COM object's properties.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+comGetProperty(handle,property,...)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{handle}] COM object (class "COMObject") as returned by e.g.
+\code{comCreateObject}
+\item[\code{property}] name of property to get as a character string
+\item[\code{...}] optional additional arguements for property specification (e.g.
+index for an array)
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+The return value depends on the (data) type of the property to read.
+\end{Value}
+\begin{Author}\relax
+Thomas Baier
+\end{Author}
+\begin{SeeAlso}\relax
+\code{\LinkA{comInvoke}{comInvoke}}, \code{\LinkA{comSetProperty}{comSetProperty}}
+\end{SeeAlso}
+\begin{Examples}
+\begin{ExampleCode}
+# start up excel
+## Not run: x<-comCreateObject("Excel.Application")
+
+# retrieve the "Visible" property
+## Not run: v <- comGetProperty(x,"Visible")
+
+# add a new workbook to Excel and gain access to the first worksheet
+## Not run: newwb <- comInvoke(comGetProperty(x,"Workbooks"),"Add")
+## Not run: ws <- comGetProperty(newwb,"Worksheets",1)
+
+# get a specific range
+## Not run: r <- comGetProperty(ws,"Range","A1","B4")
+
+# do something now...
+\end{ExampleCode}
+\end{Examples}
+

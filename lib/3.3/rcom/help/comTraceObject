@@ -1,0 +1,27 @@
+comTraceObject             package:rcom             R Documentation
+
+_T_r_a_c_e _i_n_f_o_r_m_a_t_i_o_n _a_b_o_u_t _t_h_e _p_a_s_s_e_d _o_b_j_e_c_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function will trace information about the COM object passed
+     as parameter.
+
+     Use this function to find out what 'rcom' thinks about the object.
+
+     Use this function for debugging purposes to find out why 'rcom'
+     fails.
+
+_U_s_a_g_e:
+
+     comTraceObject(handle)
+
+_A_r_g_u_m_e_n_t_s:
+
+  handle: COM object (class "COMObject") as returned by e.g.
+          'comCreateObject'
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Baier
+

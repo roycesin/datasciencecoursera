@@ -1,0 +1,89 @@
+Entry: comCreateObject
+Aliases: comCreateObject
+Keywords: programming
+Description: Create COM Objects
+URL: ../../../library/rcom/html/comCreateObject.html
+
+Entry: comGetObject
+Aliases: comGetObject
+Keywords: programming
+Description: Get Access to Existing COM Objects
+URL: ../../../library/rcom/html/comGetObject.html
+
+Entry: comGetObjectInfo
+Aliases: comGetObjectInfo
+Keywords: programming
+Description: Get Information about a COM Objects
+URL: ../../../library/rcom/html/comGetObjectInfo.html
+
+Entry: comGetProperty
+Aliases: comGetProperty
+Keywords: programming
+Description: Read One of a COM Object's Properties
+URL: ../../../library/rcom/html/comGetProperty.html
+
+Entry: comGetVersion
+Aliases: comGetVersion
+Keywords: programming
+Description: Get rcom version information
+URL: ../../../library/rcom/html/comGetVersion.html
+
+Entry: comInvoke
+Aliases: comInvoke
+Keywords: programming
+Description: Invoke a function (method) on a COM Object
+URL: ../../../library/rcom/html/comInvoke.html
+
+Entry: comIsValidHandle
+Aliases: comIsValidHandle
+Keywords: programming
+Description: Check if the COM object is valid
+URL: ../../../library/rcom/html/comIsValidHandle.html
+
+Entry: comRegisterRegistry
+Aliases: comRegisterRegistry
+Keywords: programming
+Description: Register the COM server in the registry
+URL: ../../../library/rcom/html/comRegisterRegistry.html
+
+Entry: comRegisterServer
+Aliases: comRegisterServer
+Keywords: programming
+Description: Initialize the COM server
+URL: ../../../library/rcom/html/comRegisterServer.html
+
+Entry: comSetProperty
+Aliases: comSetProperty
+Keywords: programming
+Description: Set One of the COM Object's Properties
+URL: ../../../library/rcom/html/comSetProperty.html
+
+Entry: comThis
+Aliases: comThis
+Keywords: programming
+Description: Return the COM Object for this \R Instance
+URL: ../../../library/rcom/html/comThis.html
+
+Entry: comTrace
+Aliases: comTrace
+Keywords: programming
+Description: Trace information about SEXP
+URL: ../../../library/rcom/html/comTrace.html
+
+Entry: comTraceObject
+Aliases: comTraceObject
+Keywords: programming
+Description: Trace information about the passed object
+URL: ../../../library/rcom/html/comTraceObject.html
+
+Entry: comUnregisterRegistry
+Aliases: comUnregisterRegistry
+Keywords: programming
+Description: Deregister the COM server from the registry
+URL: ../../../library/rcom/html/comUnregisterRegistry.html
+
+Entry: comUnregisterServer
+Aliases: comUnregisterServer
+Keywords: programming
+Description: Terminate the COM server
+URL: ../../../library/rcom/html/comUnregisterServer.html

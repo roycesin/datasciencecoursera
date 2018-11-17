@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Register the COM server in the registry</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for comRegisterRegistry {rcom}"><tr><td>comRegisterRegistry {rcom}</td><td align="right">R Documentation</td></tr></table>
+<h2>Register the COM server in the registry</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function will register the COM server and its associated type library
+with the system (registry).
+</p>
+<p>
+Technically, this will register the type library and add local-server entries
+for the prog and class ids.
+</p>
+<p>
+This function has to be called when installing the package. Otherwise, neither
+the type library will be available (automation clients cannot use the server)
+nor a mapping from version independent and version-dependant prog-id will
+be available.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+comRegisterRegistry()
+</pre>
+
+
+<h3>Arguments</h3>
+
+
+<h3>Author(s)</h3>
+
+<p>
+Thomas Baier
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="comUnregisterRegistry.html">comUnregisterRegistry</a></code>
+</p>
+
+
+
+<hr><div align="center">[Package <em>rcom</em> version 1.2.4 <a href="00Index.html">Index]</a></div>
+
+</body></html>

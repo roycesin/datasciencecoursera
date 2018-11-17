@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Initialize the COM server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for comRegisterServer {rcom}"><tr><td>comRegisterServer {rcom}</td><td align="right">R Documentation</td></tr></table>
+<h2>Initialize the COM server</h2>
+
+
+<h3>Description</h3>
+
+<p>
+This function registers the COM server at runtime. It is called automatically
+when the package <code>rcom</code> is loaded.
+</p>
+<p>
+Technically, this will register the class factory in the system, so calls
+to <code>CoCreateInstance()</code> from client applications will succeed.
+</p>
+<p>
+<EM>Remark: The type library will be loaded on demand later on</EM>
+</p>
+<p>
+<code>comUnregisterServer()</code> is used to unregister the class object (class
+factory) again.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+comRegisterServer()
+</pre>
+
+
+<h3>Arguments</h3>
+
+
+<h3>Author(s)</h3>
+
+<p>
+Thomas Baier
+</p>
+
+
+<h3>See Also</h3>
+
+<p>
+<code><a href="comUnregisterServer.html">comUnregisterServer</a></code>,
+<code><a href="comRegisterRegistry.html">comRegisterRegistry</a></code>
+</p>
+
+
+
+<hr><div align="center">[Package <em>rcom</em> version 1.2.4 <a href="00Index.html">Index]</a></div>
+
+</body></html>

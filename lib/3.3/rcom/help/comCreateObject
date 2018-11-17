@@ -1,0 +1,38 @@
+comCreateObject             package:rcom             R Documentation
+
+_C_r_e_a_t_e _C_O_M _O_b_j_e_c_t_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Creates a new COM object specified by its program identifier.
+
+     The object will be released automatically when the last reference
+     to the object is removed. To speed up this process, assign some
+     NULL value as soon as you don't need the object any more.
+
+_U_s_a_g_e:
+
+     comCreateObject(progid)
+
+_A_r_g_u_m_e_n_t_s:
+
+  progid: ProgId of COM object to create, e.g. "Excel.Application"
+
+_V_a_l_u_e:
+
+     'comCreateObject' returns an object of class '"COMObject"'.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Baier
+
+_E_x_a_m_p_l_e_s:
+
+     # start up excel
+     ## Not run: x<-comCreateObject("Excel.Application")
+
+     # and make it visible
+     ## Not run: comSetProperty(x,"Visible",TRUE)
+
+     # do something now...
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Get Access to Existing COM Objects</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="../../R.css">
+</head><body>
+
+<table width="100%" summary="page for comGetObject {rcom}"><tr><td>comGetObject {rcom}</td><td align="right">R Documentation</td></tr></table>
+<h2>Get Access to Existing COM Objects</h2>
+
+
+<h3>Description</h3>
+
+<p>
+Tries to find a running instance of the specified <code>progid</code> and returns
+this object.
+</p>
+<p>
+Use this function to use services provided by an already running application,
+e.g. the currently visible instance of Microsoft Excel.
+</p>
+<p>
+The object will be released automatically when the last reference to the
+object is removed. To speed up this process, assign some NULL value as soon
+as you don't need the object any more.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+comGetObject(progid)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>progid</code></td>
+<td>
+ProgId of COM object to get access to, e.g. "Excel.Application"</td></tr>
+</table>
+
+<h3>Value</h3>
+
+<p>
+<code>comGetObject</code> returns an object of class <code>"COMObject"</code>.</p>
+
+<h3>Author(s)</h3>
+
+<p>
+Thomas Baier
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# get access to excel
+## Not run: x&lt;-comGetObject("Excel.Application")
+
+# and make it visible
+## Not run: comSetProperty(x,"Visible",TRUE);
+
+# do something now...
+</pre>
+
+
+
+<hr><div align="center">[Package <em>rcom</em> version 1.2.4 <a href="00Index.html">Index]</a></div>
+
+</body></html>

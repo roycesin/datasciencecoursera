@@ -1,0 +1,15 @@
+comCreateObject	comCreateObject
+comGetObject	comGetObject
+comGetObjectInfo	comGetObjectInfo
+comGetProperty	comGetProperty
+comGetVersion	comGetVersion
+comInvoke	comInvoke
+comIsValidHandle	comIsValidHandle
+comRegisterRegistry	comRegisterRegistry
+comRegisterServer	comRegisterServer
+comSetProperty	comSetProperty
+comThis	comThis
+comTrace	comTrace
+comTraceObject	comTraceObject
+comUnregisterRegistry	comUnregisterRegistry
+comUnregisterServer	comUnregisterServer

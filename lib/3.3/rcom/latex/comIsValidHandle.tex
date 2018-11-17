@@ -1,0 +1,28 @@
+\HeaderA{comIsValidHandle}{Check if the COM object is valid}{comIsValidHandle}
+\keyword{programming}{comIsValidHandle}
+\keyword{interface}{comIsValidHandle}
+\begin{Description}\relax
+Check if the passed object is a valid COM object
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+comIsValidHandle(handle)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{handle}] COM object (class "COMObject") as returned by e.g.
+\code{comCreateObject}
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+\code{com.isvalid} returns \code{TRUE} if the object is valid, \code{FALSE}
+otherwise.
+\end{Value}
+\begin{Author}\relax
+Thomas Baier
+\end{Author}
+\begin{SeeAlso}\relax
+\code{\LinkA{comCreateObject}{comCreateObject}}, \code{\LinkA{comGetObject}{comGetObject}}
+\end{SeeAlso}
+

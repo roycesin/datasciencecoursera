@@ -1,0 +1,29 @@
+\HeaderA{comInvoke}{Invoke a function (method) on a COM Object}{comInvoke}
+\keyword{programming}{comInvoke}
+\keyword{interface}{comInvoke}
+\begin{Description}\relax
+Invokes a function (method) on a COM object.
+\end{Description}
+\begin{Usage}
+\begin{verbatim}
+comInvoke(handle,method,...)
+\end{verbatim}
+\end{Usage}
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{handle}] COM object (class "COMObject") as returned by e.g.
+\code{comCreateObject}
+\item[\code{method}] name of method to call as a character string
+\item[\code{...}] parameters passed when calling the method
+\end{ldescription}
+\end{Arguments}
+\begin{Value}
+The return value of \code{comInvoke} depends on the function (method) called.
+\end{Value}
+\begin{Author}\relax
+Thomas Baier
+\end{Author}
+\begin{SeeAlso}\relax
+\code{\LinkA{comSetProperty}{comSetProperty}}, \code{\LinkA{comGetProperty}{comGetProperty}}
+\end{SeeAlso}
+

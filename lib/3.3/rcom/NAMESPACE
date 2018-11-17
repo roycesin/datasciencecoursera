@@ -1,0 +1,19 @@
+# our back-end code
+useDynLib(rcom)
+
+# exported symbols from rcom
+export(comCreateObject,
+       comGetObject,
+       comInvoke,
+       comIsValidHandle,
+       comGetProperty,
+       comSetProperty,
+       comRegisterServer,
+       comUnregisterServer,
+       comRegisterRegistry,
+       comUnregisterRegistry,
+       comTraceObject,
+       comGetObjectInfo,
+       comGetVersion,
+       comTrace,
+       comThis)

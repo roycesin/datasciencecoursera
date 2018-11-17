@@ -1,0 +1,136 @@
+================================================================================
+rcom DCOM client and server package for R                               05-07-11
+================================================================================
+
+Installation
+------------
+
+After installing the package, start rgui and load the package using
+
+	library(rcom)
+
+Then register the COM-server (this is a one-time registration)
+
+	comRegisterRegistry()
+
+This will add registry information about the COM server. To uninstall
+correctly and remove the information from the registry, call
+
+	comUnregisterRegistry()
+
+After performing registration using comRegisterRegistry() it is recommended
+to restart R (and reload rcom).
+
+
+Problems for COM Client
+-----------------------
+
+The console will provide information about problems sometimes. Check
+the error messages there for a analysis of the problems.
+
+Error codes shown after invoking a method using comInvoke() normally are
+returned by the method itself. Look up the method's documentation first. In
+most cases, the problem has nothing to do with rcom.
+
+If the documentation for the COM objects you're using doesn't help you, you
+should ask the manufacturer of the object.
+
+Additionally, you should have a look at the mailing list archives (see
+below) or post your question to the list.
+
+
+
+Reporting Bugs
+--------------
+
+To report bugs, please use our bug-reporting system at
+http://bugzilla.csd.univie.ac.at.
+
+
+Contact and Support
+-------------------
+
+For support on installation, operation etc. please direct your
+questions to the mailing list hosted at
+http://mailman.csd.univie.ac.at/mailman/listinfo/rcom-l. You can find
+the archives of the mailing list there, too. The list is members-only,
+so please subscribe to the list first. Posts by non-members will be
+rejected automatically.
+
+The mailing list provides archives of all postings. Please browse the
+archives to find an answer to your questions first!
+
+Directing your questions to the mailing list will reach all members of
+the list and increases the probability to quickly get the answer you
+expect.
+
+Please honor the fact that the authors of this software package are
+doing the work in their spare time. Because of this, time for
+answering questions is limited. We are doing our best to read all
+postings at the mailing list and try to help as soon as possible, but
+we will not answer private mail sent to us concerning help for the COM
+server. So please post your questions to the mailing list.
+
+If you have any ideas for enhancement of this software please let us
+know. It is best to discuss topics on the mailing list and then add
+the topic as agreed by all on the list to the feature database at
+http://bugzilla.csd.univie.ac.at/. We will do our best to implement
+features or future releases.
+
+In case you need direct support, e.g. for a commercial product, or if
+your project requires additional features to be implemented in our
+software, don't hesitate to contact us. We will be glad to find a
+solution for you.
+
+
+Documentation
+-------------
+
+For the rcom DCOM client library, have a look at the documentation
+included here, e.g. type
+
+	?comInvoke
+
+to get information about the function comInvoke().
+
+For more information about the DCOM server and additional tools, have
+a look at the R (D)COM-Server at
+http://cran.r-project.org/contrib/extra/dcom. The information you find
+there will also apply to rcom in most cases.
+
+--- the following does not apply to the current version!
+The operators [[ and $ are provided to make use of rcom easier. A sample
+is shown below:
+
+    > x <- comCreateObject("Excel.Application")
+    
+    > x[["Visible"]] <- TRUE   # comSetProperty
+    
+    > x[["Path"]]  # comGetProperty
+    [1] "C:\\Program Files\\Microsoft Office\\Office10"
+    
+    > x$CheckSpelling("hellox")  # comInvoke
+    [1] FALSE
+    
+    > x$CheckSpelling("hello") # comInvoke
+    [1] TRUE
+    
+    > x$Quit()
+    NULL
+--- end of docs for next release
+
+Thanks
+------
+
+Many thanks go to Erich Neuwirth for his valuable comments and support
+in testing and finding bugs. Have a look at recent versions of his
+Excel-Addin for integration of R into Microsoft Excel.
+
+Gabor Grothendieck (mailto:ggrothendieck@myway.com) contributed code to
+ease use of the rcom functions (operators [[, $). Thanks a lot!
+
+
+Authors
+-------
+
+Thomas Baier <thomas.baier@ci.tuwien.ac.at>

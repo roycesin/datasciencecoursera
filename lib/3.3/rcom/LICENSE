@@ -1,0 +1,165 @@
+
+		     STATCONN HOME&STUDENT LICENSE
+		      (Version 1, March 29, 2013)
+
+         Copyright (C) 2008-2013 Thomas Baier.  All rights reserved.
+
+The "Program" refers to any copyrightable work licensed under this
+License.  A "work based on the Program" either means the Program or
+any derivative work of the Program, such as a translation or a
+modification.  Please note that the Program may be available under
+different licenses, too.  Please contact the Licensor for for more
+information.
+
+The Program is a copyrighted work whose copyright is held by Thomas Baier
+(the "Licensor").
+
+BY USING THE PROGRAM (OR ANY WORK BASED ON THE PROGRAM), YOU INDICATE
+YOUR ACCEPTANCE OF THIS LICENSE TO DO SO, AND ALL ITS TERMS AND
+CONDITIONS FOR USING, COPYING OR DISTRIBUTING THE PROGRAM OR WORKS
+BASED ON IT.
+
+THIS LICENSE GRANTS YOU (the "Licensee") PERMISSION TO USE THE PROGRAM
+OR ITS DERIVATIVE WORKS.  ALL OTHER ACTIONS ARE PROHIBITED BY LAW.  IF
+YOU DO NOT ACCEPT THESE TERMS AND CONDITIONS, DO NOT USE OR DISTRIBUTE
+THE PROGRAM.
+
+
+1. Licenses.
+
+Licensor hereby grants the Licensee a non-exclusive, non-transferable,
+non-sublicensable license to download, install and use the Program on
+an unlimited number of computers for Home&Student use.
+
+See section 7 for the definition of "Home&Student" for this license.
+
+
+2. Restrictions.
+
+This license is subject to the following restrictions:
+
+(a) Distribution of the Program or any work based on the Program to
+any party is prohibited.  This restriction also applies to
+redistribution of the software inside the Licensee's organization.
+However, the following methods of distribution shall not in and of
+themselves be a violation of this restriction:
+
+	(i) Manual downloading and executing the setup program once for every
+single computer on this computer, where Program shall be installed, from the
+official home sites of statconn (http://www.statconn.com and
+http://rcom.univie.ac.at/). Download and execution has to be explicitly performed
+by a natural person and must not be done automatically to avoid redistribution
+restrictions.
+
+
+(b) All publications based on analyses performed using the Program
+directly or indirectly must include the following citation:
+
+      Baier Thomas, & Neuwirth Erich (2007). Excel :: COM :: R.
+      Computational Statistics, Volume 22, Number 1/April 2007. Physica Verlag.
+
+
+(c) This license only covers Home&Student use. All kind of other use
+under the STATCONN HOME&STUDENT LICENSE is prohibited. Other
+use requires a different license for the Program. See section 8. If
+you are unsure if you are entitled for Home&Student use, ask a lawyer.
+
+
+(d) Activities other than use, copying and distribution of the Program
+for Home&Student use are not subject to this License and they are
+outside its scope. Functional use (running) of the Program is not
+restricted, and any output produced through the use of the Program is
+subject to this license only if its contents constitute a work based
+on the Program (independent of having been made by running the
+Program).
+
+
+3. Reservation of Rights.
+
+No rights are granted to the Program except as expressly set forth herein.
+You may not copy, modify, sublicense, or distribute the Program except as
+expressly provided under this License.  Any attempt otherwise to copy,
+modify, sublicense or distribute the Program is void, and will
+automatically terminate your rights under this License.  However, parties
+who have received copies, or rights, from you under this License will not
+have their licenses terminated so long as such parties remain in full
+compliance and they have received their copies in compliance with this
+license (see 2 (a)).
+
+
+4. Other Restrictions.
+
+If the distribution and/or use of the Program is restricted in certain
+countries for any reason, Licensor may add an explicit geographical
+distribution limitation excluding those countries, so that distribution is
+permitted only in or among countries not thus excluded.  In such case,
+this License incorporates the limitation as if written in the body of this
+License.
+
+
+5. Limitations.
+
+THE PROGRAM IS PROVIDED TO YOU "AS IS," WITHOUT WARRANTY.  THERE IS NO
+WARRANTY FOR THE PROGRAM, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.  THE ENTIRE
+RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD
+THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY
+SERVICING, REPAIR OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL
+LICENSOR, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR REDISTRIBUTE THE
+PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+
+6. General.
+
+This Agreement is governed by the laws of the Republic of Austria,
+excluding choice of law rules.
+
+If any of the terms of this license agreement or the whole license agreement
+at all is void because of applicable laws in your country (or the country of
+intended use of the Program), you are not allowed to use or distribute
+the Program at all.
+
+
+7. Definition of Home&Student Use
+
+Home&Student use in the spirit of this license is either
+
+* use at home, for the purpose of studying or personal use only or
+* use by a student, for the purpose of studying or personal use only.
+
+As a clarification, the following is provided:
+
+* The Home&Student license does not apply for use in a course (no matter if it
+  is a university course, a free public/private course or any other course) and
+  must not be used by lecturers or students during this course. The only
+  exception is that a Home&Student version may be used for studying after course
+  times at home (without an instructor).
+
+* The Home&Student license does not apply for use at work, for consulting
+  services or anything else where payment is involved directly or indirectly.
+  The Home&Student license also does not apply for work done for anyone else
+  (a person or a company), as this is not personal use anymore!
+
+We do provide alternative licenses for other use. See section 8.
+
+
+8. Alternative Licenses.
+
+In case this license agreement does not permit the use or distribution
+of the Program for you, alternative license agreements (commercial or
+educational) are available. Please visit
+
+		http://www.statconn.com/
+
+for more information. This also holds true, if any of the terms of the license
+agreement may be void due to applicable law and you're not allowed to use
+or distribute the Program at all.

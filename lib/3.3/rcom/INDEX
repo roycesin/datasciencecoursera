@@ -1,6 +1,11 @@
+$.COMObject             Invoke a function (method) an a COM Object
+[[.COMObject            Read One of a COM Object's Properties
+[[<-.COMObject          Write One of a COM Object's Properties
 comCreateObject         Create COM Objects
 comGetObject            Get Access to Existing COM Objects
 comGetObjectInfo        Get Information about a COM Objects
+comGetPicture           Get the clipboard contents as IPictureDisp
+                        Object
 comGetProperty          Read One of a COM Object's Properties
 comGetVersion           Get rcom version information
 comInvoke               Invoke a function (method) on a COM Object
@@ -8,8 +13,9 @@ comIsValidHandle        Check if the COM object is valid
 comRegisterRegistry     Register the COM server in the registry
 comRegisterServer       Initialize the COM server
 comSetProperty          Set One of the COM Object's Properties
-comThis                 Return the COM Object for this \R Instance
+comThis                 Return the COM Object for this R Instance
 comTrace                Trace information about SEXP
 comTraceObject          Trace information about the passed object
 comUnregisterRegistry   Deregister the COM server from the registry
 comUnregisterServer     Terminate the COM server
+installstatconnDCOM     install statconnDCOM

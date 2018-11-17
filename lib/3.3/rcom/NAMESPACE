@@ -1,6 +1,10 @@
 # our back-end code
 useDynLib(rcom)
 
+# required external references
+import(utils)
+import(rscproxy)
+
 # exported symbols from rcom
 export(comCreateObject,
        comGetObject,
@@ -16,4 +20,10 @@ export(comCreateObject,
        comGetObjectInfo,
        comGetVersion,
        comTrace,
-       comThis)
+       comThis,
+       comGetPicture,
+       comSetLicenseInfo,
+	"[[<-.COMObject",
+	"[[.COMObject",
+	"$.COMObject",
+       installstatconnDCOM)
